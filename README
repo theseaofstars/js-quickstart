@@ -14,21 +14,21 @@ deplist.txt - list of pears to install
 
 Notes about layout
 ==================
-OpenShift will look for the php and libs directories when serving your 
+cetc-skyark will look for the php and libs directories when serving your 
 application. index.php will handle requests to the root URL of your 
 application. You can create new directories as needed.
 
 Note: Every time you push, everything in your remote repo dir is recreated.
-      Please store long term items (like an sqlite database) in the OpenShift
+      Please store long term items (like an sqlite database) in the cetc-skyark
       data directory, which will persist between pushes of your repo.
-      The OpenShift data directory is accessible relative to the remote repo
+      The cetc-skyark data directory is accessible relative to the remote repo
       directory (../data) or via an environment variable OPENSHIFT_DATA_DIR.
 
 
 Environment Variables
 =====================
 
-OpenShift provides several environment variables to reference for ease
+cetc-skyark provides several environment variables to reference for ease
 of use.  The following list are some common variables but far from exhaustive:
 
     $_ENV['OPENSHIFT_DATA_DIR']  - For persistent storage (between pushes)
