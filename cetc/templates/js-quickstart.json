@@ -1,0 +1,29 @@
+{
+      "kind": "ImageStream",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "js-quickstart",
+        "annotations": {
+            "openshift.io/image.insecureRepository": "true"
+        }
+      },
+      "spec": {
+        "tags": [
+          {
+            "name": "1.0",
+            "annotations": {
+              "description": "js-quickstart applications",
+              "iconClass": "icon-php",
+              "tags": "builder,php,private-instant-app",
+              "supports":"php:5.6,php",
+              "version": "1.0",
+              "sampleRepo": "https://github.com/theseaofstars/js-quickstart.git"
+            },
+            "from": {
+              "Kind": "DockerImage",
+              "Name": "registry.cetc-cloud.com:5000/php-56-rhel7:latest"
+            }
+          }
+        ]
+      }
+    }
